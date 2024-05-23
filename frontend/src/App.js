@@ -44,6 +44,10 @@ function App() {
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </Container>
 
+      <ToastContainer
+       autoClose={3000}
+       position="bottom-left"/>
+
       <GlobalStyle />
     </>
   );
