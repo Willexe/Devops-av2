@@ -17,27 +17,46 @@ const FormContainer = styled.form`
 const InputArea = styled.div`
   display: flex;
   flex-direction: column;
+  
 `;
+
+
 
 const Input = styled.input`
   width: 120px;
   padding: 0 10px;
-  border: 1px solid #bbb;
+  border: 1px solid linear-gradient( #2e2d2d, #212121);;
   border-radius: 5px;
   height: 40px;
+  color #212121:
+
 `;
 
-const Label = styled.label``;
+const Label = styled.label`
+`;
 
 const Button = styled.button`
+  height: 42px;
   padding: 10px;
   cursor: pointer;
   border-radius: 5px;
   border: none;
   background-color: #2c73d2;
   color: white;
-  height: 42px;
+  background: linear-gradient(145deg, #2e2d2d, #212121);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  border: solid #404c5d 1px;
 `;
+
+
+
+
 
 const Form = ({ getUsers, onEdit, setOnEdit }) => {
   const ref = useRef();

@@ -17,7 +17,10 @@ const Container = styled.div`
   gap: 10px;
 `;
 
-const Title = styled.h2``;
+const Title = styled.h2`
+color: #f2f2f2;
+
+`;
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -39,7 +42,7 @@ function App() {
   return (
     <>
       <Container>
-        <Title>USUÁRIOS</Title>
+        <Title>Adicione um usuário</Title>
         <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </Container>
