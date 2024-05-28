@@ -17,6 +17,6 @@ jobs:
 
       
     - name: Build the Docker image 
-      run: docker build -t Devops-av2 .
+      run: docker build -t clidevopsav2 .
     - name: Push to Dockerhub
-      run: docker push Willexe/Devops-av2
+      run: docker push Willexe/clidevopsav2
