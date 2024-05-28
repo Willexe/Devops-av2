@@ -1,4 +1,4 @@
- FROM node
+ FROM node:20.13.1
 
 RUN mkdir app
 
