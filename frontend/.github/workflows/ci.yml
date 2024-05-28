@@ -18,4 +18,4 @@ jobs:
     - name: Build the Docker image 
       run: docker build -t devopsav2 .
     - name: Push to Dockerhub
-      run: docker push Willexe/devopsav2
+      run: docker push Willexe/devopsav2:latest
