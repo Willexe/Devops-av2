@@ -1,0 +1,21 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Login Dockerhub
+      run: docker login -u willaexe -p devopsav2
+      
+    - name: Build the Docker image 
+      run: docker build -t devopsav2 .
+    - name: Push to Dockerhub
+      run: docker push Willexe/devopsav2
