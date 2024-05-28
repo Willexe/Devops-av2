@@ -13,12 +13,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Login Dockerhub
-      env: 
-        DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
-        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-      run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
+      run: docker login -u willaexe -p devopsav2
+
       
     - name: Build the Docker image 
-      run: docker build -t Devops-av2 .
+      run: docker build -t clidevopsav2 .
     - name: Push to Dockerhub
-      run: docker push Willexe/Devops-av2
+      run: docker push Willexe/clidevopsav2
