@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t clidevopsav2 -f frontend/Dockerfile .
     - name: Push to Dockerhub
-      run: docker push willaexe/clidevopsav2:latest
+      run: docker push willaexe/devopsav2:latest
