@@ -18,4 +18,4 @@ jobs:
     - name: Delete Old Docker container
       run: docker rm -f devopsav2-container || true
     - name: run Docker Container
-      run: docker run -d -p 3000:3000 --name devopsav2-containerwillaexe/devopsav2
+      run: docker run -d -p 3000:3000 --name devopsav2-container willaexe/devopsav2
