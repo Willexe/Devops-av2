@@ -1,0 +1,22 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Login Dockerhub
+
+      run: docker login -u willaexe -p devopsav2
+      
+    - name: Build the Docker image
+      run: docker build -t willaexe/devopsav2 -f frontend/Dockerfile .
+    - name: Push to Dockerhub
+      run: docker push willaexe/devopsav2
