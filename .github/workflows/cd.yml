@@ -15,7 +15,7 @@ jobs:
     steps:
     - name: Pull Docker image
       run: docker pull willaexe/devopsav2:latest
-    - name: Delete Old Docker container
+    - name: Delete Old Docker Container
       run: docker rm -f devopsav2-container || true
     - name: run Docker Container
       run: docker run -d -p 3000:3000 --name devopsav2-container willaexe/devopsav2
