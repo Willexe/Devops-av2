@@ -43,13 +43,9 @@ function App() {
     <>
       <Container>
         <Title>Adicione um usuário</Title>
-        <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
-        <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
+
       </Container>
 
-      <ToastContainer
-       autoClose={3000}
-       position="bottom-left"/>
 
       <GlobalStyle />
     </>
