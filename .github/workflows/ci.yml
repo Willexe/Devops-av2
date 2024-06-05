@@ -16,7 +16,7 @@ jobs:
 
       run: docker login -u willaexe -p devopsav2
       
-    - name: Build the Docker image
+    - name: Build the Docker Image
       run: docker build -t willaexe/devopsav2 .
     - name: Push to Dockerhub
       run: docker push willaexe/devopsav2
