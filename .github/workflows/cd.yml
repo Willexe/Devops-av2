@@ -13,7 +13,7 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - name: Pull Docker image
+    - name: Pull Docker Image
       run: docker pull willaexe/devopsav2:latest
     - name: Delete Old Docker Container
       run: docker rm -f devopsav2-container || true
