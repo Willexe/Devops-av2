@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <Container>
-        <Title>Adicione um usuárioooooooo</Title>
+        <Title>Adicione um usuáriooo</Title>
         <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
         <Grid setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
       </Container>
